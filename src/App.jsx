@@ -364,7 +364,7 @@ export default function BulkScoutGenerator() {
           {activeTab === null && !generating && <EmptyState hasCandidates={candidates.length > 0} />}
 
           {activeTab !== null && candidates[activeTab] && (
-            <div style={{ animation: "slideIn 0.3s ease", maxWidth: 900 }}>
+            <div style={{ animation: "slideIn 0.3s ease", maxWidth:"95%"}}>
               <div style={{ marginBottom: 20 }}>
                 <div style={{ fontSize: 10, letterSpacing: 3, color: "#bbb", textTransform: "uppercase", marginBottom: 10 }}>候補者情報</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8, padding: "14px 18px", background: "#fff", border: "1px solid #ece8e0", borderRadius: 8 }}>
@@ -449,7 +449,7 @@ function EmptyState({ hasCandidates }) {
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%", textAlign: "center" }}>
       <div style={{ fontSize: 44, marginBottom: 16, opacity: 0.35 }}>{hasCandidates ? "👈" : "📋"}</div>
       <div style={{ fontSize: 14, color: "#bbb", marginBottom: 8 }}>{hasCandidates ? "候補者を選択してください" : "CSVをアップロードして開始"}</div>
-      <div style={{ fontSize: 12, color: "#d0ccc4", maxWidth: 320, lineHeight: 1.8 }}>
+      <div style={{ fontSize: 12, color: "#d0ccc4", maxWidth: "95%", lineHeight: 1.8 }}>
         {hasCandidates
           ? "左リストから候補者を選ぶと生成結果が表示されます"
           : "上の「テンプレート編集」でベース文面を設定し、CSVをアップロードして一括生成できます"}
