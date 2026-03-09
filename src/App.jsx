@@ -364,7 +364,7 @@ export default function BulkScoutGenerator() {
           {activeTab === null && !generating && <EmptyState hasCandidates={candidates.length > 0} />}
 
           {activeTab !== null && candidates[activeTab] && (
-            <div style={{ animation: "slideIn 0.3s ease", maxWidth: 680 }}>
+            <div style={{ animation: "slideIn 0.3s ease", maxWidth: 900 }}>
               <div style={{ marginBottom: 20 }}>
                 <div style={{ fontSize: 10, letterSpacing: 3, color: "#bbb", textTransform: "uppercase", marginBottom: 10 }}>候補者情報</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8, padding: "14px 18px", background: "#fff", border: "1px solid #ece8e0", borderRadius: 8 }}>
