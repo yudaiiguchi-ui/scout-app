@@ -294,7 +294,7 @@ export default function BulkScoutGenerator() {
       <div style={{ display: "flex", height: `calc(100vh - ${templateOpen ? (templateTab === "edit" ? 280 : 240) : 0}px - 52px)` }}>
 
         {/* Left panel */}
-        <div style={{ width: 260, background: "#fff", borderRight: "1px solid #e8e4dc", display: "flex", flexDirection: "column", flexShrink: 0 }}>
+        <div style={{ width: 290, background: "#fff", borderRight: "1px solid #e8e4dc", display: "flex", flexDirection: "column", flexShrink: 0 }}>
           <div style={{ padding: "18px 16px", borderBottom: "1px solid #f0ece4" }}>
             <div style={{ fontSize: 9, letterSpacing: 3, color: "#aaa", textTransform: "uppercase", marginBottom: 10 }}>CSV アップロード</div>
             <div onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }} onDragLeave={() => setIsDragging(false)} onDrop={onDrop} onClick={() => fileRef.current.click()}
